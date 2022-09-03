@@ -4,23 +4,12 @@ void main(){
 int *ptr,n;
 int *rev;
 
-printf("\nEnter size of array: ");
-scanf("%d",&n);
+int main(){
+    int n,ec=0,oc=0;
+    //int a[n];
+    printf("\n Enter array size: ");
+    scanf("%d",&n);
 
-ptr=(int*)malloc(n*sizeof(int));
-printf("Enter the element in array: ");
-for (int i = 0; i < n; i++)
-{
-    scanf("%d",(ptr+i));
-}
-rev =(int*)malloc(n*sizeof(int));
-for ( int i = n, j=0; i > j; i--, j++)
-{
-    //swap the elements 
-    int tmp = *(ptr+j);
-    *(ptr+j) = *(ptr+i);
-    *(ptr+j) =  tmp;
-}
 
 for (int i = 0; i < n; i++)
 {
